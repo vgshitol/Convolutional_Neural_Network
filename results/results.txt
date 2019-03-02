@@ -1,0 +1,248 @@
+{'epochs': [5, 10, 15, 20], 'batch_size': [64, 128, 256, 512], 'kernel_size': [(2, 2), (3, 3), (4, 4)], 'learning_rate': [0.0001, 0.0005, 0.001, 0.002]}
+/usr/local/lib/python3.6/dist-packages/sklearn/externals/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_96 (Conv2D)           (None, 26, 26, 8)         80        
+_________________________________________________________________
+max_pooling2d_91 (MaxPooling (None, 13, 13, 8)         0         
+_________________________________________________________________
+conv2d_97 (Conv2D)           (None, 11, 11, 16)        1168      
+_________________________________________________________________
+max_pooling2d_92 (MaxPooling (None, 5, 5, 16)          0         
+_________________________________________________________________
+flatten_46 (Flatten)         (None, 400)               0         
+_________________________________________________________________
+dense_91 (Dense)             (None, 20)                8020      
+_________________________________________________________________
+dense_92 (Dense)             (None, 10)                210       
+=================================================================
+Total params: 9,478
+Trainable params: 9,478
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/15
+60000/60000 [==============================] - 8s 135us/step - loss: 10.4650 - acc: 0.3469 - mean_absolute_error: 0.1306
+Epoch 2/15
+60000/60000 [==============================] - 4s 67us/step - loss: 4.7180 - acc: 0.6979 - mean_absolute_error: 0.0604
+Epoch 3/15
+60000/60000 [==============================] - 4s 67us/step - loss: 2.2616 - acc: 0.8522 - mean_absolute_error: 0.0296
+Epoch 4/15
+60000/60000 [==============================] - 4s 67us/step - loss: 2.0873 - acc: 0.8640 - mean_absolute_error: 0.0272
+Epoch 5/15
+60000/60000 [==============================] - 4s 68us/step - loss: 2.0101 - acc: 0.8689 - mean_absolute_error: 0.0262
+Epoch 6/15
+60000/60000 [==============================] - 4s 67us/step - loss: 1.9430 - acc: 0.8736 - mean_absolute_error: 0.0253
+Epoch 7/15
+60000/60000 [==============================] - 4s 68us/step - loss: 1.9239 - acc: 0.8750 - mean_absolute_error: 0.0250
+Epoch 8/15
+60000/60000 [==============================] - 4s 68us/step - loss: 1.9029 - acc: 0.8767 - mean_absolute_error: 0.0247
+Epoch 9/15
+60000/60000 [==============================] - 4s 69us/step - loss: 1.0952 - acc: 0.9260 - mean_absolute_error: 0.0148
+Epoch 10/15
+60000/60000 [==============================] - 4s 68us/step - loss: 0.3086 - acc: 0.9753 - mean_absolute_error: 0.0049
+Epoch 11/15
+60000/60000 [==============================] - 4s 67us/step - loss: 0.2867 - acc: 0.9762 - mean_absolute_error: 0.0048
+Epoch 12/15
+60000/60000 [==============================] - 4s 66us/step - loss: 0.2733 - acc: 0.9776 - mean_absolute_error: 0.0045
+Epoch 13/15
+60000/60000 [==============================] - 4s 66us/step - loss: 0.2585 - acc: 0.9782 - mean_absolute_error: 0.0043
+Epoch 14/15
+60000/60000 [==============================] - 4s 66us/step - loss: 0.2292 - acc: 0.9807 - mean_absolute_error: 0.0039
+Epoch 15/15
+60000/60000 [==============================] - 4s 66us/step - loss: 0.2155 - acc: 0.9812 - mean_absolute_error: 0.0038
+Best: 0.968783 using {'batch_size': 128, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.608983 (0.063117) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.860150 (0.089817) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.958550 (0.001383) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.904733 (0.046900) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.615233 (0.027600) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.713100 (0.039200) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.810767 (0.144467) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.093967 (0.003567) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.462400 (0.004067) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.849867 (0.005100) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.524017 (0.425817) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.750133 (0.033433) with: {'batch_size': 64, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.754267 (0.004133) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.910000 (0.048533) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.965533 (0.000033) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.489067 (0.378433) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.437567 (0.138667) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.860517 (0.010350) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.531617 (0.432417) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.792817 (0.143583) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.698750 (0.031083) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.952033 (0.002967) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.902617 (0.049717) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.728883 (0.122017) with: {'batch_size': 64, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.475033 (0.277000) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.913317 (0.046583) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.531067 (0.432967) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.910117 (0.057883) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.749833 (0.102200) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.963833 (0.000133) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.534283 (0.431850) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.099733 (0.002200) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.842800 (0.086900) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.963067 (0.000933) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.804717 (0.053583) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.596583 (0.072983) with: {'batch_size': 64, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.949233 (0.002533) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.964900 (0.000933) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.966933 (0.000300) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.100317 (0.001617) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.882917 (0.057550) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.872583 (0.002650) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.866283 (0.001583) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.686217 (0.142283) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.704367 (0.035600) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.966550 (0.001750) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.478883 (0.380150) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.668017 (0.038583) with: {'batch_size': 64, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.764317 (0.114283) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.840517 (0.094050) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.952883 (0.001250) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.796050 (0.034583) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.507550 (0.117450) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.851633 (0.086767) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.905050 (0.041383) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.100467 (0.010167) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.516800 (0.029900) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.719367 (0.050967) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.811250 (0.049817) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.561333 (0.003767) with: {'batch_size': 128, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.746133 (0.004467) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.902600 (0.052867) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.827450 (0.135083) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.531567 (0.433300) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.616650 (0.052983) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.804300 (0.056900) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.912317 (0.047417) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.312017 (0.221717) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.638333 (0.092233) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.861817 (0.002150) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.789517 (0.070350) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.427017 (0.323450) with: {'batch_size': 128, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.875150 (0.049817) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.910050 (0.044683) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.917667 (0.046467) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.437017 (0.341183) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.578317 (0.084550) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.958683 (0.001750) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.968783 (0.000683) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.714550 (0.228683) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.471617 (0.276117) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.911867 (0.043967) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.963750 (0.002817) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.591683 (0.216517) with: {'batch_size': 128, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.558733 (0.091400) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.958750 (0.001017) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.965267 (0.001833) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.806450 (0.051783) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.661250 (0.162750) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.869850 (0.002250) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.964883 (0.003783) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.475167 (0.376967) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.924067 (0.006400) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.965667 (0.000867) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.766717 (0.098883) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.871000 (0.043133) with: {'batch_size': 128, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.576967 (0.031600) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.784717 (0.129283) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.855800 (0.001667) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.856617 (0.005217) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.503150 (0.079017) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.519883 (0.128283) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.939917 (0.007650) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.903750 (0.040450) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.645783 (0.074450) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.637983 (0.099950) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.797117 (0.040950) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.840817 (0.005483) with: {'batch_size': 256, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.711517 (0.144950) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.767683 (0.090117) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.955917 (0.002450) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.797100 (0.162833) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.423783 (0.044450) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.857567 (0.092167) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.915267 (0.049867) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.804067 (0.156767) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.581150 (0.105050) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.703967 (0.064733) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.526717 (0.427983) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.806300 (0.048533) with: {'batch_size': 256, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.872750 (0.032850) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.949933 (0.001900) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.915383 (0.047950) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.333883 (0.236350) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.777350 (0.048817) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.861900 (0.000533) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.823800 (0.047167) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.677667 (0.001233) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.621417 (0.038783) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.852567 (0.095467) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.912600 (0.048433) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.810383 (0.143083) with: {'batch_size': 256, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.659783 (0.096383) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.867133 (0.087400) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.868367 (0.094233) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.866650 (0.096917) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.655083 (0.002817) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.960950 (0.000617) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.967600 (0.001367) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.770950 (0.200750) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.522850 (0.044783) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.910683 (0.045583) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.963800 (0.001567) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.859133 (0.102900) with: {'batch_size': 256, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.643450 (0.033717) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.731850 (0.163183) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.855267 (0.009300) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.595567 (0.100300) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.562767 (0.115567) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.781217 (0.036983) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.710367 (0.037633) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.899083 (0.039283) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.319450 (0.063050) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.532167 (0.254700) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.330533 (0.228100) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.879600 (0.049333) with: {'batch_size': 512, 'epochs': 5, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.689950 (0.010950) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.845033 (0.004733) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.858717 (0.092550) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.866850 (0.092850) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.579283 (0.033750) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.769717 (0.086283) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.862233 (0.003400) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.854950 (0.106517) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.432933 (0.077933) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.879400 (0.054000) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.784667 (0.154600) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.812800 (0.046367) with: {'batch_size': 512, 'epochs': 10, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.803650 (0.016150) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.786867 (0.156400) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.816183 (0.045250) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.857700 (0.010833) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.594433 (0.123100) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.760133 (0.186467) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.943550 (0.015517) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.918650 (0.043983) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.588667 (0.045800) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.470650 (0.380250) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.632483 (0.320917) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.927600 (0.035833) with: {'batch_size': 512, 'epochs': 15, 'kernel_size': (4, 4), 'learning_rate': 0.002}
+0.747117 (0.021717) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.0001}
+0.816383 (0.137983) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.0005}
+0.956433 (0.000433) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.001}
+0.965633 (0.001233) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (2, 2), 'learning_rate': 0.002}
+0.595350 (0.039817) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.0001}
+0.758767 (0.101833) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.0005}
+0.911983 (0.043417) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.001}
+0.962833 (0.001367) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (3, 3), 'learning_rate': 0.002}
+0.722750 (0.009217) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.0001}
+0.805067 (0.041100) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.0005}
+0.915817 (0.042383) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.001}
+0.538950 (0.424850) with: {'batch_size': 512, 'epochs': 20, 'kernel_size': (4, 4), 'learning_rate': 0.002}
